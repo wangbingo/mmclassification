@@ -1,5 +1,5 @@
 # checkpoint saving
-checkpoint_config = dict(interval=1)
+checkpoint_config = dict(interval=5)
 # yapf:disable
 log_config = dict(
     interval=100,
@@ -10,6 +10,6 @@ log_config = dict(
 # yapf:enable
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-load_from = None
+load_from = '../../input/resnest50-pretrained-weight/resnest50_converted-1ebf0afe.pth'     #####
 resume_from = None
 workflow = [('train', 1)]

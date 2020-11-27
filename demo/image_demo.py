@@ -17,8 +17,8 @@ def main():
     # test a single image
     result = inference_model(model, args.img)
     # show the results
-    show_result_pyplot(model, args.img, result)
-
+    #show_result_pyplot(model, args.img, result)
+    print(result)
 
 if __name__ == '__main__':
     main()
